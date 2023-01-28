@@ -30,6 +30,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -52,7 +53,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Mharo Rajasthan</a></h1>
-
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -322,9 +324,12 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Special Pizza</h3>
-                    <p class="fst-italic">For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.</p>
-                    <p class="fst-italic"> A pizza that goes ballistic on veggies! Check out this mouth watering overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes.</p>
-                    
+                    <p class="fst-italic">For a vegetarian looking for a BIG treat that goes easy on the spices, this
+                      one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden
+                      corn to top it all.</p>
+                    <p class="fst-italic"> A pizza that goes ballistic on veggies! Check out this mouth watering
+                      overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes.</p>
+
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/menu/pizza.jpg" alt="" class="img-fluid">
@@ -335,7 +340,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Special Sandwich</h3>
-                    <p class="fst-italic">Yummy and delicious Special Cheese grilled sandwich with ingredients vegetables,mayonnaise,shezwan,cheese and our secret ingredient.</p>
+                    <p class="fst-italic">Yummy and delicious Special Cheese grilled sandwich with ingredients
+                      vegetables,mayonnaise,shezwan,cheese and our secret ingredient.</p>
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -347,7 +353,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Special Thali</h3>
-                    <p class="fst-italic"> If you want to try our best stuffs all at once then special thali is for you. It comes with chapati, 3 types of vegetables, dal,rice,lassi and icecream.</p>
+                    <p class="fst-italic"> If you want to try our best stuffs all at once then special thali is for you.
+                      It comes with chapati, 3 types of vegetables, dal,rice,lassi and icecream.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/Special-Thali.jpg" alt="" class="img-fluid">
@@ -359,7 +366,9 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Special Lassi</h3>
                     <p class="fst-italic">Fresh, Creamy and refreshing Lassi with dryfruits and kesar.</p>
-                    <p>Lassi is Super refreshing,creamy and thick yogurtbased drink. Refresh yourself with this cool and creamy lassi which is also a great way to get the power of yogurt throughout your busy day. Our lassi comes with Kesar and stuffing of cherry and dry fruits.</p>
+                    <p>Lassi is Super refreshing,creamy and thick yogurtbased drink. Refresh yourself with this cool and
+                      creamy lassi which is also a great way to get the power of yogurt throughout your busy day. Our
+                      lassi comes with Kesar and stuffing of cherry and dry fruits.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/lassi.jpg" alt="" class="img-fluid">
@@ -370,7 +379,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Special Ice Cream</h3>
-                    <p class="fst-italic">Looking for a refreshing summer treat? Satisfy your cravings with this fruity, creamy, & nutty treat that tastes like a hybrid of chocolate sorbet and vanilla soft serve.</p>
+                    <p class="fst-italic">Looking for a refreshing summer treat? Satisfy your cravings with this fruity,
+                      creamy, & nutty treat that tastes like a hybrid of chocolate sorbet and vanilla soft serve.</p>
                     <p class="fst-italic">You can choose from our large variety at decent price.</p>
 
                   </div>
@@ -499,52 +509,27 @@
           <p>Book a Table</p>
         </div>
 
-        <form name="book" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="php-email-form" data-aos="fade-up " data-aos-delay="100">
-        <!-- <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
-          data-aos-delay="100"> -->
-          <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" data-aos="fade-up "
+          data-aos-delay="100">
+          <div class="text-fields">
+
+            <input name="name" type="text" class="text-name" placeholder="Name">
+            <input name="email" type="email" class="text-name email-input" placeholder="Email Address">
+            <input name="phone" type="text" class="text-name phone-input" placeholder="Phone Number">
+            <input name="date" type="text" class="text-name phone-input" placeholder="Date" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <input name="time" type="text" class="text-name phone-input" placeholder="Time">
+            <input name="number" type="number" class="text-name phone-input" placeholder="# of people"
+              data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <div class="text-center">
+
+              <textarea class="text-name " name="message" rows="8" placeholder="Message" required></textarea>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time">
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
-                data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
             </div>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="my-2">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your
-              reservation. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Book a Table</button></div>
+          <div class="text-center"><button type="submit" class="btn">Send Message</button></div>
         </form>
 
       </div>
@@ -770,7 +755,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="php-email-form">
+            <form action="#" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+              class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -785,16 +771,14 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
               </div>
-              <div class="my-2">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-          <div class="text-center "><button type="submit">Send Message</button></div>
-          </form>
 
-        </div>
+              <div class="text-center"><button type='submit' class="btn-dark">Submit</button></div>
+            </form>
+
+          </div>
 
 
-        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
       <div class="row">
         <div class="col-md-6 form-group">
           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -817,7 +801,7 @@
       <div class="text-center"><button type="submit">Send Message</button></div>
     </form> -->
 
-      </div>
+        </div>
 
       </div>
 
